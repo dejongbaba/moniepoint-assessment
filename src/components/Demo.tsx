@@ -33,10 +33,10 @@ function Demo() {
                     </div>
 
                     <div className='flex justify-between items-center py-12'>
-                        <p className='w-[50%]'>Explore traffic sources, page behaviour,conversions and more to gain deep
+                        <p className='w-[50%]'>{`Explore traffic sources, page behaviour,conversions and more to gain deep
                             insight into your
                             audience.
-                            With us your business doesn't just adapt - it evolves </p>
+                            With us your business doesn't just adapt - it evolves`} </p>
                         <div className='flex'>
                             <button className='text-xs bg-gray-300 rounded-xl px-6 py-3 mr-2'>Request a demo</button>
                             <button className='text-xs text-white bg-primary px-6 py-3 rounded-xl'>Start for free

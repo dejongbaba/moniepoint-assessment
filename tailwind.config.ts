@@ -18,7 +18,7 @@ const config: Config = {
                 secondary: '#FFD025'
             },
             fontSize: {
-                big: '10rem',
+                big: '7rem',
             }
         },
     },

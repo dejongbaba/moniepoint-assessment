@@ -10,9 +10,9 @@ function Ramos() {
                     with our intuitive
                 </h2>
                 <div className='flex justify-between items-center'>
-                    <p>Explore traffic sources, page behaviour,conversions and more to gain deep insight into your
+                    <p>{`Explore traffic sources, page behaviour,conversions and more to gain deep insight into your
                         audience.
-                        With us your business doesn't just adapt - it evolves </p>
+                        With us your business doesn't just adapt - it evolves`} </p>
                     <div className='flex'>
                         <button className='text-xs bg-gray-300 rounded-xl px-5 py-2 mr-2'>Request a demo</button>
                         <button className='text-xs text-white bg-primary px-5 py-2 rounded-xl'>Request a demo</button>
