@@ -1,11 +1,17 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleDown, faPlay, faRocket} from "@fortawesome/free-solid-svg-icons";
+import {motion} from "framer-motion";
 
 function Analytics() {
+
     return (
-        <div className='min-h-[350px] p-8'>
-            <h1 className='relative flex text-7xl justify-center'>
+        <motion.div
+            whileInView={{scale: 1, y: 0, opacity: 1}}
+            viewport={{once: true}}
+            initial={{scale: 0, y: 105, opacity: 0}}
+            className='min-h-[100vh] p-16'>
+            <h1 className='relative flex text-9xl justify-center h-full'>
                 <div className='circles relative flex justify-center'>
                     <div className='rounded-full w-20 h-20 flex items-center justify-center  bg-gray-100 text-orange'>
                         <FontAwesomeIcon width={15} className='w-6 h-6' icon={faRocket}/>
@@ -23,16 +29,16 @@ function Analytics() {
                         <FontAwesomeIcon className='w-4 h-4'
                                          icon={faPlay}/></button>
                 </div>
-                <p className='absolute text-7xl top-[57%] left-[20%]'>that <span
+                <p className='absolute text-9xl top-[80%] left-[12%]'>that <span
                     className='text-gray-300'>helps</span> you</p>
-                <p className='absolute flex bottom-[-100px] left-[26%] text-7xl'> shape <div
+                <p className='absolute flex bottom-[-200px] items-center left-[10%] text-9xl'> shape <div
                     className='bg-secondary flex justify-center items-center h-16 w-16 mx-2 rounded-full text-black'>
                     <FontAwesomeIcon className='w-6 h-6' icon={faAngleDoubleDown}/>
                 </div> the future
                 </p>
             </h1>
 
-        </div>
+        </motion.div>
     );
 }
 

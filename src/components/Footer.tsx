@@ -1,6 +1,10 @@
+'use client'
 import React from 'react';
+import {useScroll} from "framer-motion";
 
+// import {useScroll} from 'framer-motion';
 function Footer() {
+    const scroll = useScroll()
     return (
         <div className='bg-black p-8 relative bottom'>
             <div className=" divide-y ">
