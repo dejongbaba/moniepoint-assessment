@@ -38,7 +38,8 @@ function Footer() {
             </div>
             <ul className='flex items-center space-x-4 justify-between'>
                 <li>
-                    <img className='w-[400px]' src="/images/png/ramos-registered.png" alt="ramos registered logo"/>
+                    <p className='text-9xl text-white'>Ramos<span>&reg;</span></p>
+                    {/*<img className='w-[400px]' src="/images/png/ramos-registered.png" alt="ramos registered logo"/>*/}
                 </li>
                 <li className='text-gray-300'>
                     Privacy

@@ -1,5 +1,5 @@
 import React from 'react';
-import {faAngleDoubleDown, faArrowUp} from "@fortawesome/free-solid-svg-icons";
+import {faAngleDoubleDown, faArrowDown, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {motion} from "framer-motion";
 
@@ -13,20 +13,20 @@ function Widget() {
             initial={{scale: 0, y: 105, opacity: 0}}
 
             className='py-32 px-12 rounded-3xl bg-gray-200 space-y-12'>
-            <div className='flex justify-between'>
-                <div className='flex-1 text-5xl w-[50%]'>
+            <div className='flex justify-between items-center'>
+                <div className='flex-1 text-6xl w-[50%]'>
                     <p>Your key to strategic </p>
                     <p>Success through analytics </p>
                 </div>
-                <div className='w-[40%] m-auto text-xs'>
-                    <p> Ready for exciting, instantaneous, all-accessible insights in real time ?
+                <div className='  text-xl'>
+                    <p className='w-[70%]'> Ready for exciting, instantaneous, all-accessible insights in real time ?
                     </p>
                 </div>
             </div>
             <div className='grid grid-cols-5 gap-3'>
-                <div className='col-span-3 relative mr-3 flex p-5 bg-white rounded-lg border shadow-b-lg'>
-                    <div>
-                        <div className="inline-flex bg-secondary mb-6 p-3 rounded-lg text-xs shadow-b-lg">
+                <div className='col-span-3 overflow-auto relative mr-3 flex p-5 bg-white rounded-lg border shadow-b-lg'>
+                    <div className='w-[50%]'>
+                        <div className="inline-flex bg-secondary mb-[50px] p-3 rounded-lg text-xs shadow-b-lg">
                             Setting up reports
                         </div>
                         <div className='space-y-4'>
@@ -37,16 +37,32 @@ function Widget() {
                             </p>
                         </div>
                     </div>
-                    <img src='/images/png/statistics.png' className='w-[22%] absolute right-0 '/>
+                    <div className='absolute right-0 border p-5 rounded-t-l-2xl w-[500px] h-[250px] bg-gray-100 '>
+                        <h2>Sales statistics</h2>
+                        <div className='flex'>
+                            <div className='w-[150px] h-[150px] bg-primary rounded-full items-center'>
+                                <FontAwesomeIcon icon={faArrowDown} className='w-7 h-7'></FontAwesomeIcon>
+                            </div>
+                            <div>
+                                <p className='text-gray-500'>Total Profits</p>
+                                <h3>$ 264.2k</h3>
+                            </div>
+                            <div className='bg-gray-100'>
+                                <p className='line border-gray-400'></p>
+                                <h3>56k</h3>
+                            </div>
+                        </div>
+                    </div>
+                    {/*<img src='/images/png/statistics.png' className='w-[22%] absolute right-0 '/>*/}
                 </div>
                 <div className='col-span-2 space-y-4 bg-black rounded-lg border shadow-b-lg'>
                     <div className='flex justify-center'>
                         <div className=' w-20 space-y-4 h-20 border border-gray-100 mr-2 rounded-xl '>
                             <FontAwesomeIcon className='w-6 h-6' icon={faAngleDoubleDown}/>
                             <div className='flex relative'>
-                                <div className='w-6 h-6 border-1 border-black rounded-full bg-gray-300'></div>
+                                <div className='w-15 h-15 border-1 border-black rounded-full bg-gray-300'></div>
                                 <div
-                                    className='w-6 h-6 border-1 border-black rounded-full bg-orange-300 relative left-[-10px]'></div>
+                                    className='w-15 h-15 border-1 border-black rounded-full bg-orange-300 relative left-[-10px]'></div>
                             </div>
                         </div>
                         <div className=' w-20 h-20 border border-gray-100 rounded-xl '>

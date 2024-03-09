@@ -1,14 +1,22 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faRocket} from "@fortawesome/free-solid-svg-icons";
+import {motion} from "framer-motion";
 
 function div() {
     return (
-        <div className='space-y-5 text-center py-16'>
-            <div className='w-[80px] h-[80px] m-auto items-center justify-center flex rounded-lg bg-primary shadow-lg'>
+        <div className='space-y-5 text-center py-[100px]'>
+            <motion.div
+                whileInView={{scale: 1, y: 0, opacity: 1}}
+                viewport={{once: true}}
+                initial={{scale: 0, y: 105, opacity: 0}}
+                transition={
+                    {scale: {duration: 0.2}, opacity: {duration: 0.4}}
+                }
+                className='w-[80px] h-[80px] m-auto items-center justify-center flex rounded-lg bg-primary shadow-lg'>
                 <FontAwesomeIcon className='w-7 text-white' icon={faRocket}/>
-            </div>
-            <h1 className='text-7xl font-semibold'>Get Started</h1>
+            </motion.div>
+            <h1 className=' text-big font-semibold'>Get Started</h1>
             <p className='text-gray-400 w-[28%] m-auto '>Turn information into advantage! Start using Ramos today.
                 Signup
                 for a

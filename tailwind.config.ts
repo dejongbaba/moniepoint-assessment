@@ -16,6 +16,9 @@ const config: Config = {
             colors: {
                 primary: '#FE4A22',
                 secondary: '#FFD025'
+            },
+            fontSize: {
+                big: '10rem',
             }
         },
     },
