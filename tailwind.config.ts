@@ -19,6 +19,7 @@ const config: Config = {
             },
             fontSize: {
                 big: '7rem',
+                extra: '26rem',
             }
         },
     },

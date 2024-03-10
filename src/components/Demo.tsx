@@ -47,34 +47,38 @@ function Demo() {
 
             </div>
 
-            <div className='p-16 bg-[#F9F9F9]  rounded-3xl	'>
+            <div className='p-16 bg-[#F9F9F9]  relative rounded-5xl	'>
                 <div className='grid grid-cols-5'>
                     <div className='col-span-2 relative'>
-                        <h2 className='mb-6 text-4xl '>Turning data into real actions and ideas.</h2>
+                        <h2 className='mb-9 text-6xl  font-light '>Turning data into real actions and ideas.</h2>
                         <div className='space-y-6'>
-                            <div className='shadow-xl p-6 flex justify-between rounded-xl'>
-                                <p>Instant insights</p>
-                                <div className='rounded-full flex justify-center items-center'>
+                            <div className='shadow-2xl p-6 flex justify-between items-center font-light rounded-xl'>
+                                <p className='text-lg '>Instant Insights</p>
+                                <div className='rounded-full bg-gray-200  w-12 h-12 flex justify-center items-center'>
                                     <FontAwesomeIcon icon={faPlus} className='w-5 h-5'/>
                                 </div>
                             </div>
-                            <div className='shadow-xl p-6 flex justify-between rounded-xl'>
-                                <p>Ai technology </p>
-                                <div className='rounded-full flex justify-center items-center'>
+                            <div className='shadow-2xl p-6 flex justify-between items-center font-light rounded-xl'>
+                                <p className='text-lg '>Ai technology </p>
+                                <div className='rounded-full flex bg-gray-200 w-12 h-12  justify-center items-center'>
                                     <FontAwesomeIcon icon={faPlus} className='w-5 h-5'/>
                                 </div>
                             </div>
-                            <div className='shadow-xl p-6 flex justify-between rounded-xl'>
-                                <p>Easy Integration </p>
-                                <div className='rounded-full flex justify-center items-center'>
+                            <div className='shadow-2xl p-6 flex justify-between items-center font-light rounded-xl'>
+                                <p className='text-lg '>Easy Integration </p>
+                                <div className='rounded-full flex bg-gray-200 w-12 h-12  justify-center items-center'>
                                     <FontAwesomeIcon icon={faPlus} className='w-5 h-5'/>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div className='text-primary font-semibold text-[21rem]'>
+                <img src="/images/png/ramos-iphone.png" className='absolute left-[43%] z-10 top-[15%]'
+                     alt="iphone with insights and demoes of ramos"/>
+                <img src="/images/png/ramos-tablet.png"
+                     className='absolute right-[-50px] top-0'
+                     alt="iphone with insights and demoes of ramos"/>
+                <div className='relative top-[-50px] text-primary font-semibold text-extra'>
                     Ramos
                 </div>
 

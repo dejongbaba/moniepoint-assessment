@@ -15,8 +15,17 @@ function Widget() {
             className='py-32 px-12 rounded-3xl bg-gray-200 space-y-12'>
             <div className='flex justify-between items-center'>
                 <div className='flex-1 text-6xl w-[50%]'>
-                    <p>Your key to strategic </p>
-                    <p>Success through analytics </p>
+                    <motion.p whileInView={{scale: 1, y: 0, opacity: 1, translateY: 0}}
+                              viewport={{once: true}}
+                              initial={{scale: 0, y: 105, opacity: 0, translateY: -50}}
+                              transition={{delay: 0.9, ease: ['easeInOut'], damping: 2}}
+                    >Your key to strategic
+                    </motion.p>
+                    <motion.p whileInView={{scale: 1, y: 0, opacity: 1, translateY: 0}}
+                              viewport={{once: true}}
+                              transition={{delay: 0.9, ease: ['easeInOut'], damping: 2}}
+                              initial={{scale: 0, y: 105, opacity: 0, translateY: -60}}>Success through analytics
+                    </motion.p>
                 </div>
                 <div className='  text-xl'>
                     <p className='w-[70%]'> Ready for exciting, instantaneous, all-accessible insights in real time ?
@@ -26,9 +35,13 @@ function Widget() {
             <div className='grid grid-cols-5 gap-3'>
                 <div className='col-span-3 overflow-auto relative mr-3 flex p-5 bg-white rounded-lg border shadow-b-lg'>
                     <div className='w-[50%]'>
-                        <div className="inline-flex bg-secondary mb-[50px] p-3 rounded-lg text-xs shadow-b-lg">
+                        <motion.div whileInView={{scale: 1, y: 0, opacity: 1, translateY: 0}}
+                                    viewport={{once: true}}
+                                    transition={{delay: 0.9, ease: ['easeInOut'], damping: 2}}
+                                    initial={{scale: 0, y: 105, opacity: 0, translateY: -60}}
+                                    className="inline-flex bg-secondary mb-[50px] p-3 rounded-lg text-xs shadow-b-lg">
                             Setting up reports
-                        </div>
+                        </motion.div>
                         <div className='space-y-4'>
                             <h4 className='text-3xl w-[80%]'>Fast and easy access to analytics</h4>
                             <p className='text-gray-400'>
