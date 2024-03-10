@@ -1,7 +1,8 @@
 import React from 'react';
-import {faAngleDoubleDown, faArrowDown, faArrowUp} from "@fortawesome/free-solid-svg-icons";
+import {faArrowDown, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {motion} from "framer-motion";
+import {faAngleDoubleDown} from "@fortawesome/free-solid-svg-icons/faAngleDoubleDown";
 
 function Widget() {
 
@@ -39,72 +40,83 @@ function Widget() {
                                     viewport={{once: true}}
                                     transition={{delay: 0.9, ease: ['easeInOut'], damping: 2}}
                                     initial={{scale: 0, y: 105, opacity: 0, translateY: -60}}
-                                    className="inline-flex bg-secondary mb-[50px] p-3 rounded-lg text-xs shadow-b-lg">
+                                    className="inline-flex bg-secondary mb-[70px] p-4 rounded-2xl text-xs shadow-b-lg">
                             Setting up reports
                         </motion.div>
                         <div className='space-y-4'>
-                            <h4 className='text-3xl w-[80%]'>Fast and easy access to analytics</h4>
+                            <h4 className='text-3xl font-semibold leading-normal w-[80%]'>Fast and easy access to
+                                analytics</h4>
                             <p className='text-gray-400'>
                                 One platform is a comprehensive system of solutions that will be the first step towards
                                 digitalization of your business
                             </p>
                         </div>
                     </div>
-                    <div className='absolute right-0 border p-5 rounded-t-l-2xl w-[500px] h-[250px] bg-gray-100 '>
+                    <div
+                        className='absolute space-y-4 right-0 bottom-0 left-[50%] border border-l border-gray-200  p-5 rounded-tl-3xl h-[250px] bg-white'>
                         <h2>Sales statistics</h2>
-                        <div className='flex'>
-                            <div className='w-[150px] h-[150px] bg-primary rounded-full items-center'>
+                        <div className='grid items-center  grid-cols-5 gap-3'>
+                            <div
+                                className='w-[60px] h-[60px] flex text-white bg-primary rounded-full justify-center items-center'>
                                 <FontAwesomeIcon icon={faArrowDown} className='w-7 h-7'></FontAwesomeIcon>
                             </div>
-                            <div>
-                                <p className='text-gray-500'>Total Profits</p>
-                                <h3>$ 264.2k</h3>
+                            <div className='col-span-2'>
+                                <p className='text-gray-400 text-sm'>Total Profits</p>
+                                <h3 className='text-3xl font-normal'><span className='text-lg'>$</span> 264.2k</h3>
                             </div>
-                            <div className='bg-gray-100'>
-                                <p className='line border-gray-400'></p>
-                                <h3>56k</h3>
+                            <div className='col-span-2 bg-gray-100 rounded-2xl  p-4'>
+                                <div className='text-sm '>Visitors</div>
+                                <div className='relative my-1 py-2'>
+                                    <p className='line border-1 h-[2px] absolute  w-full rounded-l-lg  bg-gray-200'></p>
+                                    <p className='line border-1 h-[2px] absolute z-10 rounded-lg w-[50%]  bg-green-500'></p>
+                                </div>
+                                <div className='text-3xl font-light'>56k</div>
                             </div>
                         </div>
                     </div>
                     {/*<img src='/images/png/statistics.png' className='w-[22%] absolute right-0 '/>*/}
                 </div>
-                <div className='col-span-2 space-y-4 bg-black rounded-lg border shadow-b-lg'>
+                <div className='col-span-2 space-y-4 bg-black px-4 py-6 rounded-lg border shadow-b-lg'>
                     <div className='flex justify-center'>
-                        <div className=' w-20 space-y-4 h-20 border border-gray-100 mr-2 rounded-xl '>
-                            <FontAwesomeIcon className='w-6 h-6' icon={faAngleDoubleDown}/>
-                            <div className='flex relative'>
-                                <div className='w-15 h-15 border-1 border-black rounded-full bg-gray-300'></div>
+                        <div className=' space-y-4  border border-gray-100 text-center px-6 py-3 mr-2 rounded-3xl '>
+                            <FontAwesomeIcon className='w-6 h-6 text-yellow-500' icon={faAngleDoubleDown}/>
+                            <div className='flex relative items-center justify-center'>
                                 <div
-                                    className='w-15 h-15 border-1 border-black rounded-full bg-orange-300 relative left-[-10px]'></div>
+                                    className='w-[35px] h-[35px] border border-black relative left-[10px]  rounded-full bg-gray-300'></div>
+                                <div
+                                    className='w-[35px] h-[35px] border border-black rounded-full bg-orange-300 relative left-[-5px]'></div>
                             </div>
                         </div>
-                        <div className=' w-20 h-20 border border-gray-100 rounded-xl '>
+                        <div className='  p-4  border border-gray-100 rounded-3xl '>
                             <p>Transactions</p>
                             <div className='text-right'>
-                                <span className='w-7 h-7 mr-4 rounded-full bg-green-500 text-white '>
-                                    <FontAwesomeIcon icon={faArrowUp} className='w-5 h-5'/>
+                                <span
+                                    className='w-7 h-7 mr-4 rounded-full ml-auto flex items-center justify-center bg-green-500 text-white '>
+                                    <FontAwesomeIcon icon={faArrowUp} className='w-4 h-4'/>
                                 </span>
                             </div>
-                            <h3 className='text-5xl text-white'>
+                            <h3 className='text-5xl font-light text-white'>
                                 43k
                             </h3>
                         </div>
                     </div>
-                    <p className='text-white text-center'>Wigdget control</p>
-                    <p className='text-gray-300 text-xs text-center'>Reports provide a comprehensive overview of
+                    <p className='text-white text-center font-light text-2xl'>Widget control</p>
+                    <p className='text-gray-400 font-normal w-[59%] mx-auto text-center'>Reports provide a comprehensive
+                        overview of
                         important
                         aspects of
                         web analytics</p>
                 </div>
             </div>
-            <div className='grid grid-cols-5 gap-3'>
-                <div className='col-span-2'>
+            <div className='grid grid-cols-6 gap-3'>
+                <div className='col-span-3'>
                     <h3 className='text-right'>
-                        <span>Up to</span> <span className='text-7xl'>45%</span>
+                        <span className='text-2xl font-normal'>Up to</span> <span
+                        className='text-9xl font-normal'>45%</span>
                     </h3>
                 </div>
                 <div className='col-span-3'>
-                    <p className='text-xs w-[50%] leading-normal'>
+                    <p className=' w-[50%] leading-normal'>
                         Increase your analytic efficiency by up to 45% unique algorithms provide insights from data,
                         reduce time for analytics and save time for making important, informed decisions
                     </p>

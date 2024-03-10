@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 
 function Demo() {
     return (
-        <motion.div>
+        <motion.div className='relative'>
             <div className='p-8 space-y-5  '>
                 <h2 className='text-9xl w-[80%]'> Maximize <span className='text-gray-300'>efficiency </span>
                     with our intuitive
@@ -47,24 +47,27 @@ function Demo() {
 
             </div>
 
-            <div className='p-16 bg-[#F9F9F9]  relative rounded-5xl	'>
+            <div className='px-[16px] py-[30px] bg-[#F9F9F9]  relative rounded-5xl	'>
                 <div className='grid grid-cols-5'>
-                    <div className='col-span-2 relative'>
+                    <div className='col-span-2 relative z-30'>
                         <h2 className='mb-9 text-6xl  font-light '>Turning data into real actions and ideas.</h2>
-                        <div className='space-y-6'>
-                            <div className='shadow-2xl p-6 flex justify-between items-center font-light rounded-xl'>
+                        <div className='space-y-8'>
+                            <div
+                                className='shadow-2xl bg-white p-6 flex justify-between items-center font-light rounded-xl'>
                                 <p className='text-lg '>Instant Insights</p>
                                 <div className='rounded-full bg-gray-200  w-12 h-12 flex justify-center items-center'>
                                     <FontAwesomeIcon icon={faPlus} className='w-5 h-5'/>
                                 </div>
                             </div>
-                            <div className='shadow-2xl p-6 flex justify-between items-center font-light rounded-xl'>
+                            <div
+                                className='shadow-2xl bg-white p-6 flex justify-between items-center font-light rounded-xl'>
                                 <p className='text-lg '>Ai technology </p>
                                 <div className='rounded-full flex bg-gray-200 w-12 h-12  justify-center items-center'>
                                     <FontAwesomeIcon icon={faPlus} className='w-5 h-5'/>
                                 </div>
                             </div>
-                            <div className='shadow-2xl p-6 flex justify-between items-center font-light rounded-xl'>
+                            <div
+                                className='shadow-2xl bg-white p-6 flex justify-between items-center font-light rounded-xl'>
                                 <p className='text-lg '>Easy Integration </p>
                                 <div className='rounded-full flex bg-gray-200 w-12 h-12  justify-center items-center'>
                                     <FontAwesomeIcon icon={faPlus} className='w-5 h-5'/>
@@ -82,7 +85,15 @@ function Demo() {
                     Ramos
                 </div>
 
+
             </div>
+            {/*<div className='h-full flex flex-col flex-reverse absolute w-fulls'>*/}
+            <div
+                className=" rotate-180 opacity-50 z-[5]	 absolute bottom-0 left-0 right-0 top-0 flex flex-reverse bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:38px_58px] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_70%,transparent_110%)]">
+
+            </div>
+            {/*</div>*/}
+
         </motion.div>
 
     );
