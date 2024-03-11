@@ -9,23 +9,23 @@ function Widget() {
     return (
         <motion.div
 
-            whileInView={{scale: 1, y: 0, opacity: 1}}
-            viewport={{once: true}}
-            initial={{scale: 0, y: 105, opacity: 0}}
-
             className='py-32 px-12 rounded-3xl bg-gray-200 space-y-12'>
             <div className='flex justify-between items-center'>
                 <div className='flex-1 text-6xl w-[50%]'>
-                    <motion.p whileInView={{scale: 1, y: 0, opacity: 1, translateY: 0}}
-                              viewport={{once: true}}
-                              initial={{scale: 0, y: 105, opacity: 0, translateY: -50}}
-                              transition={{delay: 0.9, ease: ['easeInOut'], damping: 2}}
+                    <motion.p whileInView={{scale: 1, opacity: 1, translateY: 0}}
+                              transition={{
+                                  delay: .3, duration: 0.8,
+                                  ease: [0, 0.71, 0.2, 1.01]
+                              }}
+                              initial={{scale: 0, opacity: 0, translateY: 160}}
                     >Your key to strategic
                     </motion.p>
-                    <motion.p whileInView={{scale: 1, y: 0, opacity: 1, translateY: 0}}
-                              viewport={{once: true}}
-                              transition={{delay: 0.9, ease: ['easeInOut'], damping: 2}}
-                              initial={{scale: 0, y: 105, opacity: 0, translateY: -60}}>Success through analytics
+                    <motion.p whileInView={{scale: 1, opacity: 1, translateY: 0}}
+                              transition={{
+                                  delay: .6, duration: 0.8,
+                                  ease: [0, 0.71, 0.2, 1.01]
+                              }}
+                              initial={{scale: 0, opacity: 0, translateY: 160}}>Success through analytics
                     </motion.p>
                 </div>
                 <div className='  text-xl'>
@@ -34,12 +34,13 @@ function Widget() {
                 </div>
             </div>
             <div className='grid grid-cols-5 gap-3'>
-                <div className='col-span-3 overflow-auto relative mr-3 flex p-5 bg-white rounded-lg border shadow-b-lg'>
+                <div
+                    className='col-span-3 overflow-auto relative mr-3 flex p-5 bg-white rounded-2xl border shadow-b-lg'>
                     <div className='w-[50%]'>
-                        <motion.div whileInView={{scale: 1, y: 0, opacity: 1, translateY: 0}}
+                        <motion.div whileInView={{scale: 1, opacity: 1, translateY: 0}}
                                     viewport={{once: true}}
-                                    transition={{delay: 0.9, ease: ['easeInOut'], damping: 2}}
-                                    initial={{scale: 0, y: 105, opacity: 0, translateY: -60}}
+                                    transition={{delay: .5, ease: ['easeInOut'], damping: 2}}
+                                    initial={{scale: 0, opacity: 0, translateY: -70}}
                                     className="inline-flex bg-secondary mb-[70px] p-4 rounded-2xl text-xs shadow-b-lg">
                             Setting up reports
                         </motion.div>
@@ -76,7 +77,7 @@ function Widget() {
                     </div>
                     {/*<img src='/images/png/statistics.png' className='w-[22%] absolute right-0 '/>*/}
                 </div>
-                <div className='col-span-2 space-y-4 bg-black px-4 py-6 rounded-lg border shadow-b-lg'>
+                <div className='col-span-2 space-y-4 bg-black px-4 py-6 rounded-2xl border shadow-b-lg'>
                     <div className='flex justify-center'>
                         <div className=' space-y-4  border border-gray-100 text-center px-6 py-3 mr-2 rounded-3xl '>
                             <FontAwesomeIcon className='w-6 h-6 text-yellow-500' icon={faAngleDoubleDown}/>

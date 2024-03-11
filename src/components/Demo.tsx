@@ -7,9 +7,15 @@ function Demo() {
     return (
         <motion.div className='relative'>
             <div className='p-8 space-y-5  '>
-                <h2 className='text-9xl w-[80%]'> Maximize <span className='text-gray-300'>efficiency </span>
+                <motion.h2 initial={{opacity: 0, scale: 2, translateY: 40}}
+                           whileInView={{opacity: 1, scale: 1, translateY: 0}}
+                           transition={{
+                               duration: 0.8,
+                               delay: 0.5,
+                               ease: [0, 0.71, 0.2, 1.01]
+                           }} className='text-9xl w-[80%]'> Maximize <span className='text-gray-300'>efficiency </span>
                     with our intuitive
-                </h2>
+                </motion.h2>
                 <div className='divide-y space-y-12'>
                     <div>
                         <div className='flex justify-between items-center'>
@@ -51,7 +57,13 @@ function Demo() {
                 <div className='grid grid-cols-5'>
                     <div className='col-span-2 relative z-30'>
                         <h2 className='mb-9 text-6xl  font-light '>Turning data into real actions and ideas.</h2>
-                        <div className='space-y-8'>
+                        <motion.div initial={{opacity: 0, scaleY: 2, translateY: 40}}
+                                    whileInView={{opacity: 1, scaleY: 1, translateY: 0}}
+                                    transition={{
+                                        duration: 0.8,
+                                        delay: 1,
+                                        ease: [0, 0.71, 0.2, 1.01]
+                                    }} className='space-y-8'>
                             <div
                                 className='shadow-2xl bg-white p-6 flex justify-between items-center font-light rounded-xl'>
                                 <p className='text-lg '>Instant Insights</p>
@@ -73,17 +85,35 @@ function Demo() {
                                     <FontAwesomeIcon icon={faPlus} className='w-5 h-5'/>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-                <img src="/images/png/ramos-iphone.png" className='absolute left-[43%] z-10 top-[15%]'
-                     alt="iphone with insights and demoes of ramos"/>
-                <img src="/images/png/ramos-tablet.png"
-                     className='absolute right-[-50px] top-0'
-                     alt="iphone with insights and demoes of ramos"/>
-                <div className='relative top-[-50px] text-primary font-semibold text-extra'>
+                <motion.img initial={{opacity: 0, translateY: 100}}
+                            whileInView={{opacity: 1, translateY: 0}}
+                            transition={{
+                                duration: 0.8,
+                                delay: 0.3,
+                                ease: [0, 0.71, 0.2, 1.01]
+                            }} src="/images/png/ramos-iphone.png" className='absolute left-[43%] z-10 top-[15%]'
+                            alt="iphone with insights and demoes of ramos"/>
+                <motion.img initial={{opacity: 0, translateY: 40}}
+                            whileInView={{opacity: 1, translateY: 0}}
+                            transition={{
+                                duration: 0.8,
+                                delay: 0.5,
+                                ease: [0, 0.71, 0.2, 1.01]
+                            }} src="/images/png/ramos-tablet.png"
+                            className='absolute right-[-50px] top-0'
+                            alt="iphone with insights and demoes of ramos"/>
+                <motion.div initial={{opacity: 0, rotateX: 100, translateX: -100}}
+                            whileInView={{opacity: 1, rotateX: 0, translateX: 0}}
+                            transition={{
+                                duration: 0.8,
+                                delay: 1,
+                                ease: [0, 0.71, 0.2, 1.01]
+                            }} className='relative top-[-50px] text-primary font-semibold text-extra'>
                     Ramos
-                </div>
+                </motion.div>
 
 
             </div>

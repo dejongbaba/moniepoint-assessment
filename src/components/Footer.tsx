@@ -7,12 +7,13 @@ function Footer() {
         <motion.div className='bg-black px-[30px] py-[40px] relative bottom'>
             <div className=" divide-y divide-gray-100 space-y-8">
                 <motion.div
+                    initial={{opacity: 0, scale: 2, translateY: 40}}
                     whileInView={{opacity: 1, scale: 1, translateY: 0}}
-                    viewport={{once: true}}
-                    initial={{opacity: 0, scale: 0, translateY: -100}}
-                    transition={
-                        {opacity: {duration: 0.4}, delay: 0.5}
-                    }
+                    transition={{
+                        duration: 0.8,
+                        delay: 0.5,
+                        ease: [0, 0.71, 0.2, 1.01]
+                    }}
                     className='flex py-6 justify-between items-center'>
                     <ul className='flex font-light'>
                         <li><a href="#" className='hover:text-white text-gray-300 transition '>About</a></li>
@@ -24,12 +25,13 @@ function Footer() {
                     <h3 className='text-5xl text-white'>hello@ramos.com</h3>
                 </motion.div>
                 <motion.div
+                    initial={{opacity: 0, scale: 2, translateY: 40}}
                     whileInView={{opacity: 1, scale: 1, translateY: 0}}
-                    viewport={{once: true}}
-                    initial={{opacity: 0, scale: 0, translateY: -100}}
-                    transition={
-                        {opacity: {duration: 0.4}, delay: 0.7}
-                    }
+                    transition={{
+                        duration: 0.8,
+                        delay: 0.5,
+                        ease: [0, 0.71, 0.2, 1.01]
+                    }}
                     className='grid grid-cols-4 py-[50px] '>
                     <div className='col-span-1'>
                         <h3 className='text-white'>Warrensville Heights</h3>
@@ -51,12 +53,13 @@ function Footer() {
             <ul className='flex items-center space-x-4 justify-between'>
                 <li>
                     <motion.p
+                        initial={{opacity: 0, scale: 2, translateY: 40}}
                         whileInView={{opacity: 1, scale: 1, translateY: 0}}
-                        viewport={{once: true}}
-                        initial={{opacity: 0, scale: 0, translateY: -100}}
-                        transition={
-                            {opacity: {duration: 0.4}, delay: 0.9}
-                        }
+                        transition={{
+                            duration: 0.8,
+                            delay: 0.5,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}
                         className='text-9xl text-white'>Ramos<span>&reg;</span></motion.p>
                     {/*<img className='w-[400px]' src="/images/png/ramos-registered.png" alt="ramos registered logo"/>*/}
                 </li>
@@ -68,12 +71,13 @@ function Footer() {
                 </li>
                 <li>
                     <motion.img
-                        whileInView={{opacity: 1, scale: 1}}
-                        viewport={{once: true}}
-                        initial={{opacity: 0, scale: 0}}
-                        transition={
-                            {opacity: {duration: 0.4}, delay: 0.9}
-                        }
+                        initial={{opacity: 0, scale: 2, translateY: 40}}
+                        whileInView={{opacity: 1, scale: 1, translateY: 0}}
+                        transition={{
+                            duration: 0.8,
+                            delay: 0.5,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}
                         className='w-[100px]' src="/images/png/barcode.png" alt="barcode"/>
                 </li>
             </ul>
