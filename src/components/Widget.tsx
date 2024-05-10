@@ -30,7 +30,7 @@ function Widget() {
                 <div className='flex-1 text-6xl w-[65%]'>
                     <motion.p className='font-medium'
                               initial='initial' whileInView='inView'
-                              transition={{...transition, delay: 1}}
+                              transition={{...transition, delay: .5}}
                               variants={textVariants}
                     >Your key to strategic
                     </motion.p>
@@ -52,11 +52,9 @@ function Widget() {
                 <div
                     className='col-span-3 overflow-auto relative mr-3 flex p-5 bg-white rounded-2xl border shadow-b-lg'>
                     <img src='/images/png/fast-easy.png'/>
-
                 </div>
                 <div className='col-span-2 space-y-4 bg-black px-4 py-6 rounded-2xl border shadow-b-lg'>
                     <img src='/images/png/widget-control.png'/>
-
                 </div>
             </div>
             <div className='flex items-center justify-center gap-4'>

@@ -56,13 +56,13 @@ function Analytics() {
                         <div className='relative flex justify-center '>
                             <motion.div initial='scale' whileInView='scaleInView' variants={textVariants}
                                         transition={transition}
-                                        viewport={{once: true}}
+                                // viewport={{once: true}}
                                         className='rounded-full w-[120px] h-[120px] flex items-center justify-center  bg-gray-100 text-orange'>
                                 <FontAwesomeIcon width={15} className='w-6 h-6' icon={faRocket}/>
                             </motion.div>
                             <motion.div initial='scale' whileInView='scaleInView' variants={textVariants}
                                         transition={transition}
-                                        viewport={{once: true}}
+                                // viewport={{once: true}}
                                         className='rounded-full w-[120px] h-[120px] flex items-center justify-center relative left-[-10px] z-5  bg-primary text-white'>
                                 <FontAwesomeIcon icon={faPlay} className='w-6 h-6'/>
                             </motion.div>

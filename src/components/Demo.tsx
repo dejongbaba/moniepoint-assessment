@@ -80,7 +80,7 @@ function Demo() {
                 <div className='grid grid-cols-5'>
                     <div className='col-span-2 relative z-30'>
                         <motion.h2 initial='initial' whileInView='inView'
-                                   transition={{...transition, delay: 1}}
+                                   transition={{...transition, delay: .5}}
                                    variants={textVariants} className='mb-9 text-6xl font-medium '>Turning data
                             into
                             real
@@ -88,7 +88,7 @@ function Demo() {
                         </motion.h2>
                         <motion.div
                             initial='initial' whileInView='inView'
-                            transition={{...transition, delay: 2}}
+                            transition={{...transition, delay: 1.5}}
                             variants={textVariants}
                             className='space-y-8'>
                             <div
