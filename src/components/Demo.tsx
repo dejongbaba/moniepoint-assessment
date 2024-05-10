@@ -24,12 +24,12 @@ function Demo() {
     };
     const transition = {duration: 1, delay: 2, ease: [.25, 1, .45, 1]}
     return (
-        <div className='relative py-12 overflow-auto'>
+        <div className='relative py-[10rem] overflow-auto'>
             <div className='p-12 space-y-5  '>
                 <motion.h2 initial='initial' whileInView='inView'
                            transition={{...transition, delay: .5}}
                            variants={textVariants}
-                           className='text-big font-medium leading-tight'> Maximize <span
+                           className='text-big font-medium leading-[3rem]'> Maximize <span
                     className='text-gray-300'>efficiency </span>
                 </motion.h2>
                 <motion.h2
@@ -54,7 +54,8 @@ function Demo() {
                                     <p className='text-center text-xs w-[60%] mx-auto'>System grow faster</p>
                                 </div>
                             </div>
-                            <marquee className='text-9xl p-8 w-[500px] rounded-full bg-secondary'>Analytic Services
+                            <marquee scrollAmount="20"
+                                     className='text-9xl p-8 w-[500px] rounded-[5rem] bg-secondary'>Analytic Services
                             </marquee>
                         </div>
 
@@ -141,9 +142,6 @@ function Demo() {
 
                 </div>
             </div>
-            {/*<div className='h-full flex flex-col flex-reverse absolute w-fulls'>*/}
-
-            {/*</div>*/}
 
         </div>
 

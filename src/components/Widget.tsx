@@ -36,7 +36,7 @@ function Widget() {
                     </motion.p>
                     <motion.p className='font-medium'
                               initial='initial' whileInView='inView'
-                              transition={{...transition, delay: 1}}
+                              transition={{...transition, delay: .5}}
                               variants={textVariants}
                     >Success through analytics
                     </motion.p>

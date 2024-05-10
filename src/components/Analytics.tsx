@@ -78,10 +78,6 @@ function Analytics() {
 
                 </div>
 
-
-                {/* square box */}
-
-                {/* middle line */}
                 <motion.p
                     initial='initial'
                     whileInView='inView'
