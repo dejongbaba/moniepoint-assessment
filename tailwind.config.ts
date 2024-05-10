@@ -15,11 +15,14 @@ const config: Config = {
             },
             colors: {
                 primary: '#FE4A22',
-                secondary: '#FFD025'
+                secondary: '#FFD025',
+                menu: '#252525'
+            }, fontFamily: {
+                urbanist: ['var(--font-urbanist)'],
             },
             fontSize: {
-                big: '7rem',
-                extra: '26rem',
+                big: '9rem',
+                extra: '27rem',
             }
         },
     },

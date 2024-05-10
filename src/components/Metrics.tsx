@@ -4,8 +4,8 @@ function Metrics() {
     return (
         <div className='space-y-4 text-7xl p-8 mt-6'>
             <h1 className='leading-[85px] tracking-[-2px]'>
-                <p className='w-[80%]'>We give you full </p>
-                <p><span className='text-gray-300'>control</span> over your data </p></h1>
+                <p className='w-[80%] text-big'>We give you full </p>
+                <p className='text-big'><span className='text-gray-300 '>control</span> over your data </p></h1>
             <div className='grid grid-cols-2 gap-4'>
                 <div
                     className='overflow-auto w-[95%] bg-bottom-[0px] bg-gray-100 relative bg-center bg-no-repeat space-y-5  rounded-2xl px-12 py-9 shadow-lg '>
