@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleDown, faPlay, faRocket} from "@fortawesome/free-solid-svg-icons";
@@ -8,33 +7,20 @@ function Analytics() {
 
     const textVariants = {
         initial: {
-            // y: 0,
-            // x: 0,
             opacity: 0,
-            transform: `translate3d(0, 90px, 0.1px)`
+            transform: `translate3d(0, 90px, 0.1px)`,
         },
         scale: {
-            // y: 0,
-            // x: 0,
             opacity: 0,
             scale: 0,
         },
         scaleInView: {
-            // y: 0,
-            // x: 0,
             opacity: 1,
             scale: 1,
         },
         inView: {
-            // y: [-45, 0, 20, 0],
-            // x: [0, -45, 20, 0],
             opacity: 1,
             transform: `translate3d(0,0,0)`
-            // transition: {
-            //     type: "spring",
-            //     bounce: 0.4,
-            //     duration: 0.8
-            // }
         }
     };
     const transition = {duration: 1, delay: .5, ease: [.25, 1, .45, 1]}
@@ -42,7 +28,8 @@ function Analytics() {
         <div className='min-h-screen'>
             <div className='relative   text-center mt-[7rem]'>
                 {/* first line */}
-                <motion.div initial='scale' whileInView='scaleInView' transition={transition} variants={textVariants}
+                <motion.div viewport={{once: true}} initial='scale' whileInView='scaleInView' transition={transition}
+                            variants={textVariants}
                             className='absolute z-5 right-[4%] top-[12%] video bg-gray-300 rounded-lg  w-[320px] h-[270px]'>
                     <div className='relative w-full h-full'>
                         <span
@@ -55,21 +42,24 @@ function Analytics() {
                 <div className='flex justify-center items-start'>
                     <div className='flex shrink items-center justify-center pr-[5rem] mr-[8rem]'>
                         <div className='relative flex justify-center '>
-                            <motion.div initial='scale' whileInView='scaleInView' variants={textVariants}
+                            <motion.div viewport={{once: true}} initial='scale' whileInView='scaleInView'
+                                        variants={textVariants}
                                         transition={transition}
                                 // viewport={{once: true}}
                                         className='rounded-full w-[120px] h-[120px] flex items-center justify-center  bg-gray-100 text-orange'>
                                 <FontAwesomeIcon width={15} className='w-6 h-6' icon={faRocket}/>
                             </motion.div>
-                            <motion.div initial='scale' whileInView='scaleInView' variants={textVariants}
+                            <motion.div viewport={{once: true}} initial='scale' whileInView='scaleInView'
+                                        variants={textVariants}
                                         transition={transition}
                                 // viewport={{once: true}}
                                         className='rounded-full w-[120px] h-[120px] flex items-center justify-center relative left-[-10px] z-5  bg-primary text-white'>
-                                <FontAwesomeIcon icon={faPlay} className='w-6 h-6'/>
+                                <FontAwesomeIcon icon={faPlay}
+                                                 className='w-6 h-6'/>
                             </motion.div>
                         </div>
                         {/* analytic */}
-                        <motion.p initial='initial'
+                        <motion.p viewport={{once: true}} initial='initial'
                                   whileInView='inView' variants={textVariants}
                                   transition={transition}
                             // viewport={{once: true}}
@@ -92,10 +82,11 @@ function Analytics() {
                           whileInView='inView'
                           variants={textVariants}
                           transition={transition}
-                          className='flex items-center justify-center leading-tight text-big'> shape <div
+                          className='flex items-center justify-center leading-tight text-big'> shape <motion.div
+                    initial='scale' whileInView='scaleInView'
                     className='bg-secondary flex mx-6 justify-center items-center h-24 w-24 mx-2 rounded-full text-black'>
                     <FontAwesomeIcon className='w-8 h-8' icon={faAngleDoubleDown}/>
-                </div> the future
+                </motion.div> the future
                 </motion.p>
             </div>
 

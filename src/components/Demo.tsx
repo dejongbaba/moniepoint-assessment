@@ -26,17 +26,17 @@ function Demo() {
     return (
         <div className='relative py-[10rem] overflow-auto'>
             <div className='p-12 space-y-5  '>
-                <motion.h2 initial='initial' whileInView='inView'
+                <motion.h2 viewport={{once: true}} initial='initial' whileInView='inView'
                            transition={{...transition, delay: .5}}
                            variants={textVariants}
                            className='text-big font-medium leading-[3rem]'> Maximize <span
                     className='text-gray-300'>efficiency </span>
                 </motion.h2>
-                <motion.h2
-                    initial='initial' whileInView='inView'
-                    transition={{...transition, delay: .5}}
-                    variants={textVariants}
-                    className='text-big font-medium w-[80%]'>
+                <motion.h2 viewport={{once: true}}
+                           initial='initial' whileInView='inView'
+                           transition={{...transition, delay: .5}}
+                           variants={textVariants}
+                           className='text-big font-medium w-[80%]'>
                     with our intuitive
                 </motion.h2>
                 <div className='divide-y space-y-12'>
@@ -80,18 +80,18 @@ function Demo() {
             <div className='px-[30px] py-[80px] bg-[#F9F9F9]  relative rounded-[80px]	'>
                 <div className='grid grid-cols-5'>
                     <div className='col-span-2 relative z-30'>
-                        <motion.h2 initial='initial' whileInView='inView'
+                        <motion.h2 viewport={{once: true}} initial='initial' whileInView='inView'
                                    transition={{...transition, delay: .5}}
                                    variants={textVariants} className='mb-9 text-6xl font-medium '>Turning data
                             into
                             real
                             actions and ideas.
                         </motion.h2>
-                        <motion.div
-                            initial='initial' whileInView='inView'
-                            transition={{...transition, delay: 1.5}}
-                            variants={textVariants}
-                            className='space-y-8'>
+                        <motion.div viewport={{once: true}}
+                                    initial='initial' whileInView='inView'
+                                    transition={{...transition, delay: 1.5}}
+                                    variants={textVariants}
+                                    className='space-y-8'>
                             <div
                                 className='shadow-2xl bg-white p-6 flex justify-between items-center font-light rounded-xl'>
                                 <p className='text-lg '>Instant Insights</p>
@@ -116,25 +116,25 @@ function Demo() {
                         </motion.div>
                     </div>
                 </div>
-                <motion.img
-                    initial='initial' whileInView='inView'
-                    transition={{...transition, delay: 1}}
-                    variants={textVariants}
-                    src="/images/png/ramos-iphone.png" className='absolute left-[43%] z-10 top-[15%]'
-                    alt="iphone with insights and demoes of ramos"/>
-                <motion.img
-                    initial='initial' whileInView='inView'
-                    transition={{...transition, delay: .5}}
-                    variants={textVariants}
-                    src="/images/png/ramos-tablet.png"
-                    className='absolute left-[50%] top-10'
-                    alt="iphone with insights and demoes of ramos"/>
-                <motion.div
-                    initial={{clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}}
-                    whileInView={{clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}}
+                <motion.img viewport={{once: true}}
+                            initial='initial' whileInView='inView'
+                            transition={{...transition, delay: 1}}
+                            variants={textVariants}
+                            src="/images/png/ramos-iphone.png" className='absolute left-[43%] z-10 top-[15%]'
+                            alt="iphone with insights and demoes of ramos"/>
+                <motion.img viewport={{once: true}}
+                            initial='initial' whileInView='inView'
+                            transition={{...transition, delay: .5}}
+                            variants={textVariants}
+                            src="/images/png/ramos-tablet.png"
+                            className='absolute left-[50%] top-10'
+                            alt="iphone with insights and demoes of ramos"/>
+                <motion.div viewport={{once: true}}
+                            initial={{clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)'}}
+                            whileInView={{clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}}
                     // viewport={{once: true}}
-                    transition={{duration: 3}}
-                    className='relative top-[-50px] z-5 text-primary font-semibold text-extra'>
+                            transition={{duration: 3}}
+                            className='relative top-[50px] z-5 text-primary font-semibold text-extra'>
                     Ramos
                 </motion.div>
                 <div
