@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleDown, faPlay, faRocket} from "@fortawesome/free-solid-svg-icons";
@@ -36,7 +37,7 @@ function Analytics() {
             // }
         }
     };
-    const transition = {duration: 1, delay: 2, ease: [.25, 1, .45, 1]}
+    const transition = {duration: 1, delay: .5, ease: [.25, 1, .45, 1]}
     return (
         <div className='min-h-screen'>
             <div className='relative   text-center mt-[7rem]'>
@@ -83,7 +84,6 @@ function Analytics() {
                     whileInView='inView'
                     variants={textVariants}
                     transition={transition}
-
                     className=' text-big relative leading-none pr-[6rem] mr-[9rem]'>that <span
                     className='text-gray-300'>helps</span> you
                 </motion.p>
